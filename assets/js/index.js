@@ -100,5 +100,30 @@
 
 // console.log('arr :>> ', arr);
 
+// Task *: Написати функцію, яка приймає рядок і масив голосних літер, повертає кількість включень голосних у заданому рядку
 
+// function countVovels(str, vovelsArray)
+
+// vovelsArray = [a, e, i, o, u, y]
+
+// 'hello to you' //6
+
+// 'lorem ipsum dolor sit amet' // 9
+
+
+const arr = ['hello to you'];
+const vovelsArray = ['a', 'e', 'i', 'o', 'u', 'y'];
+
+function countVovels(arr, vovelsArray) {
+    let count = 0;
+    for (let char of arr[0]) { 
+        if (vovelsArray.includes(char)) { 
+            count++;
+        }
+    }
+    return count; 
+}
+
+const letters = countVovels(arr, vovelsArray);
+console.log('letters :>> ', letters); 
 
